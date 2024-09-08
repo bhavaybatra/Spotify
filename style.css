@@ -1,0 +1,279 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    
+}
+.maincontent{
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.musicplayer{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.navoption{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.navoption:hover {
+    opacity: 1.23;
+}
+.navoption i{
+    font-size: 1.25rem;
+}
+.navoption a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.liboption img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.boxp1{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.boxp2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.darkbadge{
+    background-color: #000;
+    color: #fff;
+}
+
+.stickynav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.stickynavicons{
+    margin-left: 0.75rem;
+    
+}
+.stickeynavoptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navitem{
+    margin-right: 1rem;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardimg{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cardtitle{
+    font-weight: 600;
+}
+.cardinfo{
+    font-size: 0.85rem;
+    opacity: 0.5;
+
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.musicplayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+    
+}
+.player{
+    width: 50%;
+    
+}
+.controls{
+    width:25%;
+    
+}
+.playercontrols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playercontrolicon{
+    height: 1rem;
+    margin-left: 1.75rem;
+    opacity: 0.7;
+}
+.playercontrolicon:hover{
+    opacity: 1;
+}
+.playbackbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progressbar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progressbar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.album{
+    display: flex;
+    align-items: center;
+
+}
+.album img{
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: 12px;
+    height: 60px;
+    border-radius: 5px;
+}
+.name{
+    opacity: 0.4;
+    font-size: 0.8rem;
+    margin-top: -15px;
+}
+.iconalbum{
+    display: flex;
+    position: relative;
+    left: 3rem;
+    font-size: 1.4rem;
+    opacity: 0.5;
+    margin-left: 1rem;
+}
+.controls i{
+    margin-left: 1rem;
+    
+    align-items: center;
+}
